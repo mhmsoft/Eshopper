@@ -17,6 +17,9 @@
         <table class="table">
             <tr>
                 <th>
+                    @Html.DisplayNameFor(model => model.img)
+                </th>
+                <th>
                     @Html.DisplayNameFor(model => model.Brand.brandName)
                 </th>
                 <th>
@@ -47,6 +50,13 @@
             {
                 <tr>
                     <td>
+                        @if (item.img != null)
+                        {
+                            <img style="width:70px;height:60px;" src="data:image;base64,@System.Convert.ToBase64String(item.img)" alt="@item.productName" />
+
+                        }
+                    </td>
+                    <td>
                         @Html.DisplayFor(modelItem => item.Brand.brandName)
                     </td>
                     <td>
@@ -71,7 +81,7 @@
                         @Html.DisplayFor(modelItem => item.created)
                     </td>
                     <td>
-                        @Html.ActionLink("Edit", "Edit", new { id = item.productId },new { @class = "btn btn-primary btn-xs" }) |
+                        @Html.ActionLink("Edit", "Edit", new { id = item.productId },new { @class = "btn btn-primary btn-xs" }) 
                        
                         @Html.ActionLink("Delete", "Delete", new { id = item.productId }, new { @class = "btn btn-danger btn-xs" })
                     </td>

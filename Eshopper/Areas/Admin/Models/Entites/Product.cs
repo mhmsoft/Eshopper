@@ -22,8 +22,12 @@ namespace Eshopper.Areas.Admin.Models.Entites
         public string Description { get; set; }
         [Display(Name = "Ürün Tarihi")]
         public DateTime created { get; set; }
-        
+        [Display(Name = "Ürün Resmi")]
+        public byte[] img { get; set; }
+
+        [Display(Name = "Kategori")]
         public int categoryId { get; set; }
+        [Display(Name = "Marka")]
         public int brandId { get; set; }
 
         // relation
