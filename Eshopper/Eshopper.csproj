@@ -1084,6 +1084,7 @@
     <Content Include="Areas\Admin\Views\brand\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\brand\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\brand\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\product\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -1102,6 +1103,7 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\brandController.cs" />
     <Compile Include="Areas\Admin\Controllers\categoryController.cs" />
+    <Compile Include="Areas\Admin\Controllers\productController.cs" />
     <Compile Include="Areas\Admin\Models\AppDbContext\Context.cs" />
     <Compile Include="Areas\Admin\Models\Entites\Brand.cs" />
     <Compile Include="Areas\Admin\Models\Entites\category.cs" />
